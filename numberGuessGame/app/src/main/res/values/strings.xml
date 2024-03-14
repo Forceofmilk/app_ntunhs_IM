@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">numberGuessGame</string>
+    <string name="guess_number">NumberGuessGame</string>
+    <string name="button_confirm">guess</string>
+    <string name="button_reset">reset</string>
+    <string name="type_any_number">type any number</string>
 </resources>

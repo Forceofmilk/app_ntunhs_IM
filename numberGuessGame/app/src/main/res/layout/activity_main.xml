@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:lineSpacingExtra="8sp"
-        android:text="終極密碼猜數字遊戲"
+        android:text="@string/guess_number"
         android:textColor="#673AB7"
         android:textSize="30sp"
         android:typeface="normal"
@@ -49,13 +49,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.561"
-        tools:text="type any number" />
+        tools:text="@string/type_any_number" />
 
     <Button
         android:id="@+id/btn_reset"
         android:layout_width="89dp"
         android:layout_height="50dp"
-        android:text="重置"
+        android:text="@string/button_reset"
         android:textColor="@color/text_color"
         android:background="@drawable/round_button"
         app:cornerRadius="12dp"
@@ -71,7 +71,7 @@
         android:id="@+id/btn_confirm"
         android:layout_width="89dp"
         android:layout_height="50dp"
-        android:text="確認"
+        android:text="@string/button_confirm"
         android:background="@drawable/rounded_button_selector"
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"

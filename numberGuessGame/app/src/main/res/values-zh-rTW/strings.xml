@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">猜數字挑戰遊戲</string>
+    <string name="guess_number">終極密碼猜數字大挑戰</string>
+    <string name="button_confirm">猜這個</string>
+    <string name="button_reset">重置</string>
+    <string name="type_any_number">請輸入數值</string>
+</resources>

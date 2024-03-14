@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="guess_number">guess number</string>
+    <string name="button_confirm">確認</string>
+    <string name="button_reset">重置</string>
+    <string name="type_any_number">type any number</string>
+</resources>
