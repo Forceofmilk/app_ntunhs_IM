@@ -5,4 +5,9 @@
     <string name="button_confirm">猜這個</string>
     <string name="button_reset">重置</string>
     <string name="type_any_number">請輸入數值</string>
+    <string name="game_has_been_reset">遊戲已被重置</string>
+    <string name="awesome_you_guess_it_right">太棒了，你答對囉 !</string>
+    <string name="congratulations">恭喜</string>
+    <string name="five_second_reset">5 秒後的重置已經開始 !</string>
+    <string name="please_type_in_int_number">請輸入正確的數值</string>
 </resources>

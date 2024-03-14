@@ -30,9 +30,9 @@ class MainActivity : AppCompatActivity() {
         var guessRound : Int = 0
 
         fun resetGame() {
-            Toast.makeText(this, "遊戲已重置",Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.game_has_been_reset),Toast.LENGTH_LONG).show()
             secretNum = Random().nextInt(100)+1
-            textView_hint.text = "猜 1 ~ 100 之間的數字"
+            textView_hint.text = "1 ~ 100"
             guess_max = 100
             guess_min = 1
             guessRound = 0
@@ -44,12 +44,12 @@ class MainActivity : AppCompatActivity() {
             editText_userInput.text.clear()
 
             if (guessNum == secretNum) {
-                hintWords = "厲害! 你猜對囉"
+                hintWords = getString(R.string.awesome_you_guess_it_right)
                 guessRound++
-                AlertDialog.Builder(this).setTitle("恭喜過關").setMessage("終極密碼是 "+secretNum+"\n你總共猜了 "+guessRound+" 次才猜中 !").create().show()
+                AlertDialog.Builder(this).setTitle(getString(R.string.congratulations)).setMessage("終極密碼是 "+secretNum+"\n你總共猜了 "+guessRound+" 次才猜中 !").create().show()
                 handler.postDelayed({
                     resetGame()
-                    Toast.makeText(this,"5 秒後的操作執行了 ! ",Toast.LENGTH_LONG).show()},
+                    Toast.makeText(this, getString(R.string.five_second_reset),Toast.LENGTH_LONG).show()},
                     6000)
 
 
@@ -60,16 +60,16 @@ class MainActivity : AppCompatActivity() {
             }
             else if (guessNum < secretNum) {
                 guess_min = guessNum
-                hintWords = "太小囉，猜 "+guess_min+" ~ "+guess_max+" 之間的數字"
+                hintWords = guess_min.toString() + " ~ " + guess_max.toString()
                 guessRound++
             }
             else if (guessNum > secretNum) {
                 guess_max = guessNum
-                hintWords = "太大囉，猜 "+guess_min+" ~ "+guess_max+" 之間的數字"
+                hintWords = guess_min.toString() + " ~ " + guess_max.toString()
                 guessRound++
             }
             else{
-                hintWords = "請輸入有效數字"
+                hintWords = getString(R.string.please_type_in_int_number)
                 guessRound++
             }
             textView_hint.text = hintWords

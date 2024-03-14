@@ -4,4 +4,9 @@
     <string name="button_confirm">guess</string>
     <string name="button_reset">reset</string>
     <string name="type_any_number">type any number</string>
+    <string name="game_has_been_reset">Game has been reset</string>
+    <string name="awesome_you_guess_it_right">Awesome, you guess it right !</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="five_second_reset">"5 second reset is done ! "</string>
+    <string name="please_type_in_int_number">Please Type in Int number</string>
 </resources>
