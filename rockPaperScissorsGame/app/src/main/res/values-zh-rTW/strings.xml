@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Title">猜拳遊戲</string>
+    <string name="result_default">輸贏結果</string>
+    <string name="app_name">猜拳遊戲</string>
+    <string name="player_user">玩家 (你)</string>
+    <string name="player_computer">玩家 (電腦)</string>
+    <string name="result_win">你贏了 !</string>
+    <string name="result_loose">你輸了 !</string>
+    <string name="result_tie">平手 !</string>
+</resources>

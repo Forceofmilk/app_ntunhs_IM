@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">rockPaperScissorsGame</string>
+    <string name="Title">Rock, Paper, Scissors !</string>
+    <string name="player_computer">Computer</string>
+    <string name="player_user">You</string>
+    <string name="result_default">Result here</string>
+    <string name="result_win">You WIN !</string>
+    <string name="result_loose">You LOOSE !</string>
+    <string name="result_tie">TIE !</string>
+</resources>
