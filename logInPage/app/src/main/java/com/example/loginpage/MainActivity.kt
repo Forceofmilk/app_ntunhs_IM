@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
-import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -75,28 +74,29 @@ class MainActivity : AppCompatActivity() {
                 },year,month,day).show()
             }
 
-            var BIRTHDAY = birthday.text.toString()
+            var BDAY = birthday.text.toString()
 
     //    Gender get
             var genderSelect = ""
-            radGrp_gender.setOnCheckedChangeListener { _, checkedID ->
-                genderSelect = radGrp_gender.findViewById<RadioButton>(checkedID).text.toString()
+            radGrp_gender.setOnCheckedChangeListener { group, checkedID ->
+                val radioButton = group.findViewById<RadioButton>(checkedID)
+                genderSelect = radioButton.text.toString()
             }
 
     //    Vehicle get
             var vehicleSelect = ""
             if(vehicle_bike.isChecked()){
-                vehicleSelect += vehicle_bike.text.toString()
+                vehicleSelect += " " + vehicle_bike.text.toString()
             }
             if(vehicle_car.isChecked()){
-                vehicleSelect += vehicle_car.text.toString()
+                vehicleSelect += " " + vehicle_car.text.toString()
             }
             if(vehicle_mortoCycle.isChecked()){
-                vehicleSelect += vehicle_mortoCycle.text.toString()
+                vehicleSelect += " " + vehicle_mortoCycle.text.toString()
             }
 
             var all_select: String
-            all_select = ID + "\n" + resultPasswordView + "\n" + user_name + "\n" +BIRTHDAY + "\n" + genderSelect + "\n" + vehicleSelect
+            all_select = "Accound ID : " + ID + "\n" + "Password : "+ resultPasswordView + "\n" +"Name : "+ user_name + "\n" +"Birthday : "+BDAY + "\n" + "Gender : " + genderSelect + "\n" +"Vehicle(s) :" + vehicleSelect
 
             AlertDialog.Builder(this).setMessage(all_select).setTitle("Your Information").show()
         }
