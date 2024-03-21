@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">logInPage</string>
+    <string-array name="city">
+        <item>臺北市</item>
+        <item>新北市</item>
+        <item>桃園市</item>
+        <item>新竹市</item>
+        <item>頭份市</item>
+    </string-array>
+</resources>
